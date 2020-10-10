@@ -1,0 +1,3 @@
+function LoadProductsDetails() {
+  alert("Conected");
+}

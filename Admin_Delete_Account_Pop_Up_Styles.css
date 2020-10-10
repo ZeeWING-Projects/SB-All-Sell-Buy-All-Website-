@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+  background: transparent;
+}
+.container
+{
+	height: 100%;
+	width: 100%;
+  background-image: url('Bg3.jpg');
+  background-size: 100% 100%;
+	position: absolute;
+	background-position: center;
+}
+.form_container
+{
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 6% auto;
+	background: whitesmoke;
+	padding: 5px;
+	overflow: hidden;
+
+
+}
+
+.input_area
+{
+	width: 100%;
+	padding: 10px 0px;
+	margin: 5px 0;
+	border:0;
+	border-bottom: 1px solid blue;
+	outline: none;
+	background: transparent;
+
+}
+.sub_mit
+{
+	width: 60%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+  margin-left: 70px;
+  margin-top: 1%;
+	background: blue;
+	border-radius:30px;
+	border:2;
+  text-size:10px;
+  color: white;
+	outline:black;
+}
+.sub_mit:hover
+{
+  box-shadow: 2px 2px 5px 5px blue;
+  font-size: 17px;
+  border-color:none;
+}
+.confirmBtn
+{
+  width: 50%;
+  padding: 10px 30px 10px;
+  cursor: pointer;
+  display: block;
+  margin-top: 60% ;
+  margin-left: 90px;
+  text-size:10px;
+  background: red;
+  border-radius:30px;
+  border:2;
+  top: 10px;
+  outline:none;
+}
+.confirmBtn:hover
+{
+  box-shadow: 2px 2px 5px 5px blue;
+  font-size: 17px;
+  border-color:none;
+
+}
+.loadDataInputArea
+{
+  width: 100%;
+  height: 50px;
+  background: transparent;
+}
+.information
+{
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  margin-top: 20%;
+}
+.output
+{
+  padding-top: 10px;
+	text-decoration-color: blue;
+}

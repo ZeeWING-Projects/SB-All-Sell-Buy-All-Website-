@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Confirm vendor account request</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Admin_SendingWarning.css'>
+
+</head>
+<body>
+
+<div class="container">
+  <div class="form_container">
+    <div class="loadDataInputArea">
+      <form id="inputToLoadData">
+      <input type="text" id = "vendor_id" class="input_area" placeholder="Enter vendor's ID to whom you want to warn" required>
+      <div class="information">
+        <textarea id="warning_msg" class="warning_msg_area" name="w3review" rows="10" cols="50"></textarea>
+      </div>
+      <button type="button" class="confirmBtn" onclick="SendWarning()">Send Warning</button>
+
+
+    </form>
+
+    </div>
+
+  </div>
+</div>
+  <script type="text/javascript" src="Admin_SendWarningJavaScript.js" ></script>
+</body>
+</html>

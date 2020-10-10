@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Admin Portal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="AdminPortalStyles.css">
+</head>
+<body class="BODY">
+  <div class="Main">
+          <header class="ServicesArea">
+            <div class="navbar">
+            <a href="#home">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">Watch out Products
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Books</a>
+                <a href="#">Clothes</a>
+                <a href="#">Mobiles</a>
+                <a href="#">Laptops</a>
+                <a href="#">Watches</a>
+                <a href="#">Cameras</a>
+              </div>
+            </div>
+            <a class "headerBTN" onclick="LoadMyProductsDetails()">Load all Products details</a>
+            <a class "headerBTN"   onclick="window.open('Admin_SendWarning.html',
+                       'newwindow',
+                       'width=500,height=550');
+                       return false;">Warn Vendor</a>
+            
+
+          </div>
+          </header>
+
+          <section class="MasterButtonArea">
+            <nav class="QuickResultsButtons">
+              <button type="Button" class="BTN" onclick="LoadCustomersDetails()">Customer's Details</button>
+              <button type="Button" class="BTN" onclick="LoadVendorsAccountDetails()">Vendor's Account Details</button>
+              <button type="Button" class="BTN" onclick="LoadVendorsPaymentDetails()">Vendor's payments Details</button>
+              <button type="Button" class="BTN" onclick="LoadVendorsReqsetsDetails()">Vendors Requests</button>
+              <button type="Button" class="BTN" onclick="LoadTodaysOrdersDetails()">Todays orders details</button>
+              <button type="Button" class="BTN" onclick="LoadShipmentsDetails()">Shipments status</button>
+
+            </nav>
+
+            <nav class="ResultArea">
+              <div class="tableContainer">
+                  <h1 id="heading">Choose any option to load data</h1>
+                  <table id="contentDisplayer"></table>
+              </div>
+            </nav>
+            </section>
+
+
+            <section class="ManagerOptionArea">
+
+              <nav >
+                <button type="Button" class="ManagerOptionBTN"
+                 onclick="window.open('Admin_ConfirmVendorAccountPopUp.html',
+                         'newwindow',
+                         'width=500,height=550');
+                         return false;"
+                         >Comfirm Vendor Request</button>
+
+                <button type="Button" class="ManagerOptionBTN"
+                onclick="window.open('Admin_Delete_Vaendor_Account.html',
+                         'newwindow',
+                         'width=500,height=550');
+                         return false;">Delete Vendor Account</button>
+                <button type="Button" class="SearchCustomerBtn" onclick="OpenVendorAnalyzer()">Watch all items of specific vendor</button>
+
+                <button type="button" class="SearchCustomerBtn"  onclick="OpenCustomerAnalyzer()">Search Customer</button>
+                <input type="text" class="customerSearchID" id="customer_Id" placeholder="Enter Customer ID OR Vendor ID to see details"></input>
+
+              </nav>
+            </section>
+
+  </div>
+  <script type="text/javascript" src="AdminPortalJScript.js" ></script>
+</body>
+
+</html>

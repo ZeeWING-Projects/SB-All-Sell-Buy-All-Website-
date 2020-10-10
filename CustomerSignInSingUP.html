@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGING AND REG FORM</title>
+	<link rel="stylesheet" href="CustomerSignInSingUP.css">
+</head>
+<body>
+<div class="container">
+	<div class="form_container">
+		<div class="button_group">
+			<div id="btn"> </div>
+		<button type="button" class="toggle_btn" onclick="login()"> LOG IN </button>
+		<button type="button" class="toggle_btn" onclick="register()"> REGISTER </button>
+		</div>
+		<div class="media_icons">
+			<img src="./twitter.jpg">
+			<img src="./instagram.jpeg">
+			<img src="./whtsap.png">
+			<img src="./facebook.jpg">
+			<img src="./telegram.png">
+		
+	</div>
+	<form id="login" class="form_group">
+		<input type="text" id="username_html" class="input_area" placeholder="UserName" required>
+		<input type="text" id="password_html" class="input_area" placeholder="Enter Password" required>
+		<button type="submit" class="sub_btn" onclick="ConfrimLogin()">LOG IN</button>
+	</form>	
+		<form id="register" class="form_group">
+		<input type="text" id="username" class="input_area" placeholder="UserName" required>
+		<input type="text" id="password" class="input_area" placeholder="Enter Password" required>
+		<input type="text" id="email" class="input_area" placeholder="Enter EMail" required>
+		<input type="checkbox" class="check_box"><span>Accept All terms and conditions</span>
+		<button type="submit" class="sub_btn" onclick="CreateAccount()">REGISTER</button>
+	
+	</form>
+	</div>
+  </div>
+   <script src="CustomerSignInSingUP.js"></script> </body>
+</html>
